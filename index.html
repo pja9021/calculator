@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="system.js"></script>
+        <script>
+			SystemJS.config({
+                baseURL: './js',
+                packages: { 
+                    '.': { 
+                        format: 'system',
+                        defaultExtension: 'js' 
+                    } 
+                }
+            });
+            SystemJS.import('calculator.js');
+		</script>
+
+		
+		<link rel="stylesheet" type="text/css" href="css/calculator.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div>
+			<div>
+				<p id="result">0</p>
+			</div>
+            <table>
+				<tr>
+                    <td class="btnCal" onclick="reset()"><p id="reset">AC</p></td>
+					<td class="btnCal" onclick="clickOther('+/-')">+/-</td>
+					<td class="btnCal" onclick="clickOther('%')">%</td>
+					<td class="btnOper" onclick="clickBtn('/', 'oper')">/</td>
+				</tr>
+				<tr>
+					<td class="btnNum" onclick="clickBtn('7', 'num')">7</td>
+					<td class="btnNum" onclick="clickBtn('8', 'num')">8</td>
+					<td class="btnNum" onclick="clickBtn('9', 'num')">9</td>
+					<td class="btnOper" onclick="clickBtn('*', 'oper')">*</td>
+				</tr>
+				<tr>
+					<td class="btnNum" onclick="clickBtn('4', 'num')">4</td>
+					<td class="btnNum" onclick="clickBtn('5', 'num')">5</td>
+					<td class="btnNum" onclick="clickBtn('6', 'num')">6</td>
+					<td class="btnOper" onclick="clickBtn('-', 'oper')">-</td>
+				</tr>
+				<tr>
+					<td class="btnNum" onclick="clickBtn('1', 'num')">1</td>
+					<td class="btnNum" onclick="clickBtn('2', 'num')">2</td>
+					<td class="btnNum" onclick="clickBtn('3', 'num')">3</td>
+					<td class="btnOper" onclick="clickBtn('+', 'oper')">+</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="btnNum" onclick="clickBtn('0', 'num')">0</td>
+					<td class="btnNum" onclick="clickOther('.')">.</td>
+					<td class="btnOper" onclick="showResult()">=</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
