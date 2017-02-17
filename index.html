@@ -28,33 +28,33 @@
 			</div>
             <table>
 				<tr>
-                    <td class="btnCal" onclick="reset()"><p id="reset">AC</p></td>
-					<td class="btnCal" onclick="clickOther('+/-')">+/-</td>
-					<td class="btnCal" onclick="clickOther('%')">%</td>
-					<td class="btnOper" onclick="clickBtn('/', 'oper')">/</td>
+                    <td id="btnReset"><p id="reset">AC</p></td>
+					<td class="btnCal" value="+/-">+/-</td>
+					<td class="btnCal" value="%">%</td>
+					<td class="btnOper" value="/">/</td>
 				</tr>
 				<tr>
-					<td class="btnNum" onclick="clickBtn('7', 'num')">7</td>
-					<td class="btnNum" onclick="clickBtn('8', 'num')">8</td>
-					<td class="btnNum" onclick="clickBtn('9', 'num')">9</td>
-					<td class="btnOper" onclick="clickBtn('*', 'oper')">*</td>
+					<td class="btnNum" value="7">7</td>
+					<td class="btnNum" value="8">8</td>
+					<td class="btnNum" value="9">9</td>
+					<td class="btnOper" value="*">*</td>
 				</tr>
 				<tr>
-					<td class="btnNum" onclick="clickBtn('4', 'num')">4</td>
-					<td class="btnNum" onclick="clickBtn('5', 'num')">5</td>
-					<td class="btnNum" onclick="clickBtn('6', 'num')">6</td>
-					<td class="btnOper" onclick="clickBtn('-', 'oper')">-</td>
+					<td class="btnNum" value="4">4</td>
+					<td class="btnNum" value="5">5</td>
+					<td class="btnNum" value="6">6</td>
+					<td class="btnOper" value="-">-</td>
 				</tr>
 				<tr>
-					<td class="btnNum" onclick="clickBtn('1', 'num')">1</td>
-					<td class="btnNum" onclick="clickBtn('2', 'num')">2</td>
-					<td class="btnNum" onclick="clickBtn('3', 'num')">3</td>
-					<td class="btnOper" onclick="clickBtn('+', 'oper')">+</td>
+					<td class="btnNum" value="1">1</td>
+					<td class="btnNum" value="2">2</td>
+					<td class="btnNum" value="3">3</td>
+					<td class="btnOper" value="+">+</td>
 				</tr>
 				<tr>
-					<td colspan="2" class="btnNum" onclick="clickBtn('0', 'num')">0</td>
-					<td class="btnNum" onclick="clickOther('.')">.</td>
-					<td class="btnOper" onclick="showResult()">=</td>
+					<td colspan="2" class="btnNum" value="0">0</td>
+					<td class="btnCal" value="3">.</td>
+					<td id="btnResult">=</td>
 				</tr>
 			</table>
 		</div>

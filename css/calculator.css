@@ -28,7 +28,7 @@ td {
 	vertical-align: middle;
 }
 
-.btnCal{
+.btnCal, #btnReset{
 	background: #E6E5E4;
 }
 
@@ -36,11 +36,11 @@ td {
 	background: #BEBDBC;
 }
 
-.btnOper{
+.btnOper, #btnResult{
 	background: #FD912B;
 }
 
-.btnOper:hover{
+.btnOper:hover, #btnResult:hover{
 	background: #C15F03;
 }
 
