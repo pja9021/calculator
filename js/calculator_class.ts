@@ -22,11 +22,10 @@ export class Calculator {
 
     public clickOther(input:string):string{
         if(input == "%"){  
-            this.buf = eval(this.buf +'* 0.01'); 
+            this.buf = eval(this.buf +'/ 100'); 
         } else if(input == "."){
             this.buf = (this.buf.length == 0) ? '0.' : this.buf + '.';
         } else {
-            console.log(this.buf.indexOf('-'));
             this.buf = (this.buf.indexOf('-') != -1) ? this.buf.substring(1) : '-' + this.buf;
 		} 
         return this.buf;
@@ -44,7 +43,7 @@ export class Calculator {
         this.result = eval(operation);
         console.log(operation);
         this.valueArr = [];
-        this.valueArr.push(this.result);
+        this.buf = this.result;
 
         return this.result;
     }
